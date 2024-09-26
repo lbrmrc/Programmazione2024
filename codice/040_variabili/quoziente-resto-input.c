@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(){
   int dividendo;
   printf("Inserisci un numero intero\n");
   scanf("%d", &dividendo);

@@ -1,5 +1,5 @@
 #include <stdio.h>
-main() {  // Un commento monolinea
+int main(){  // Un commento monolinea
   printf("Hello,");
   /* Un commento
 
