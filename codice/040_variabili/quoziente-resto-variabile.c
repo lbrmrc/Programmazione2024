@@ -2,7 +2,7 @@
 
 int main(){
   int dividendo;
-  dividendo = 22;
+  dividendo = 20;
   printf("Quoz.: %d\n", dividendo / 7);
   printf("Resto: %d\n", dividendo % 7);
 }
