@@ -1,1 +1,59 @@
-codice/040_variabili/a.out
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+codice/040_variabili/ripasso/divisione
+codice/200_adt/esempio_contatore
+codice/l09/parola_casuale
+codice/l09/indovina/indovina
+codice/230_liste_collegate/azzeramento-lista/azzeramento-lista
+codice/l10/20220118-pratica-parziale/frequenze
+codice/l10/20220131-pratica-totale/esami
