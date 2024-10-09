@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  int i, n, somma;
-  somma = 0;
-  scanf("%d", &n);
-  for (i = 1; i <= n; i++) {
-    // i assume i valori interi compresi fra 1 e n
-    somma = somma + i; // somma contiene la somma di tutti i valori assunti finora da i
-  }
-  // somma contiene la somma di tutti i valori fra 1 e n
-  printf("%d\n", somma);
+  int s, i, n;
+  do {
+    printf("Inserisci un numero positivo\n");
+    scanf("%d", &n);
+  } while (n <= 0);
+  s = 0;
+  for (i = 1; i <= n; i++)
+    s = s + i;
+  printf("La somma e` %d\n", s);
 }
