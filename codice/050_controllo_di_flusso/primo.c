@@ -20,4 +20,3 @@ int main() {
     printf("Primo\n");
   else
     printf("Non primo\n");
-}
