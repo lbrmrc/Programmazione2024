@@ -6,7 +6,7 @@ int main() {
   scanf("%d", &n);
   // Si = sequenza dei valori 1, 2, ..., n
   conta_divisori = 0;
-  for (i = 1; i <= n; i++) {
+  for (i = 2; conta_divisori == 0 && i * i <= n; i++) {
     // i assume i valori di Si
 
     if (n % i == 0) {
@@ -16,7 +16,7 @@ int main() {
     }
   }
   // conta_divisori contiene il numero di divisori di n
-  if (conta_divisori == 2)
+  if (conta_divisori == 0)
     printf("Primo\n");
   else
     printf("Non primo\n");

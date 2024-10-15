@@ -6,8 +6,8 @@ int main() {
     printf("Digita un intero (negativo termina):\n");
     scanf("%d", &numero);
     if (numero < 0)
-    break;
-    somma += numero;    
+      break;
+    somma += numero;
   }
   printf("La somma e` %d\n", somma);
 }
