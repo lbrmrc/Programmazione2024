@@ -13,7 +13,7 @@ int main() {
       // candidato assume i valori della sequenza filter(n % _==0, [1..n]), cioè
       // dei divisori di n
       divisori_candidato = 0;
-      for (i = 2; i < candidato; i++) {
+      for (i = 2; divisori_candidato == 0 && i * i <= candidato; i++) {
         if (candidato % i == 0)
           divisori_candidato++;
       }
