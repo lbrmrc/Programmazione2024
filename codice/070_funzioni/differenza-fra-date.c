@@ -1,5 +1,5 @@
 #include <stdio.h>
-main() {
+int main() {
   int G, M, A, G1, M1, A1, G2, M2, A2;
   int N0, N1, N2, N3; int JD1, JD2;
   printf("Prima data?\n"); scanf("%d%d%d", &G1, &M1, &A1);

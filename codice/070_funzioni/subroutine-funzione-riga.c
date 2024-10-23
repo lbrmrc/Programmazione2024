@@ -13,7 +13,7 @@ logo(char carattere) {
   riga(15, carattere);
 }
 
-main() {
+int main() {
   int scelta, ritorno;
   logo('*');
   printf("1. Tizio 335-1234567\n");

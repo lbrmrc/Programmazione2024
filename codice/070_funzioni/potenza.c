@@ -7,7 +7,7 @@ int potenza(int base, int esp) {
   return prod;
 }
 
-main() {
+int main() {
   int a = 3;
   int b = 2;
   printf("%d\n", potenza(a, b));

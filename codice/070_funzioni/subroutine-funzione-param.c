@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-logo(char carattere) {
+void logo(char carattere) {
   int i;
   for (i = 0; i < 15; i++)
     printf("%c", carattere);
@@ -11,7 +11,7 @@ logo(char carattere) {
   printf("\n");
 }
 
-main() {
+int main() {
   int scelta;
 
   logo('*');
