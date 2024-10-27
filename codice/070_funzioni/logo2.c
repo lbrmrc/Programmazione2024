@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-main() {
+int main() {
   int scelta;
+logo:
   printf("###############\n");
   printf("#   Rubrica   #\n");
   printf("###############\n");
@@ -10,9 +11,7 @@ main() {
   printf("Scegliere un contatto\n");
   scanf("%d", &scelta);
   if (scelta > 0) {
-    printf("###############\n");
-    printf("#   Rubrica   #\n");
-    printf("###############\n");
+goto logo;
     printf("Chiamata del contatto %d in corso\n", scelta);
   }
   printf("Fine\n");

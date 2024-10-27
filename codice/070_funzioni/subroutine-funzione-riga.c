@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-riga(int n, char carattere) {
+void riga(int n, char carattere) {
   int i;
   for (i = 0; i < n; i++)
     printf("%c", carattere);
   printf("\n");
 }
 
-logo(char carattere) {
+void logo(char carattere) {
   riga(15, carattere);
   printf("%c   Rubrica   %c\n", carattere, carattere);
   riga(15, carattere);
 }
 
-main() {
+int main() {
   int scelta, ritorno;
   logo('*');
   printf("1. Tizio 335-1234567\n");

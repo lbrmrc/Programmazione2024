@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
   int scelta;
   printf("*** Rubrica ***\n");
   printf("1. Tizio 335-1234567\n");

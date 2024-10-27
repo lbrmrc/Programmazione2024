@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
   int scelta, ritorno, i; char carattere;
   ritorno = 1; carattere = '*'; goto logo;
 elenco:
