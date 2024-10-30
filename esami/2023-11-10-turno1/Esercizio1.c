@@ -20,6 +20,25 @@ float radice(float S) {
 }
 
 int main() {
-  printf("%f\n", radice(2.0));
+  int M, N;
+  int minore, maggiore;
+  int i;
+  float s; // accumulatore
+  printf("Inserisci due numeri interi\n");
+  scanf("%d%d", &M, &N);
+  if (M <= N) {
+    minore = M;
+    maggiore = N;
+  } else {
+    minore = N;
+    maggiore = M;
+  }
+  s = 0.0; // inizializzazione accumulatore
+  for (i = minore; i <= maggiore; i++)
+    // Si
+    // map (radice, Si)
+    s = s + radice((float)i);
+  // in s c'è la somma delle radici quadrate degli interi compresi fra M e N
+  printf("%f\n", s);
   return 0;
 }
