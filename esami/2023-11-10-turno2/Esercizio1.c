@@ -3,17 +3,11 @@
 int divisibile(int a, int b) {
   int j;
   while (a > 0) { // COND 1
-    j = 0;
-    while (a > 1 && j < b - 1) { // COND 2
-      a = a - 1;
-      j = j + 1;
-    }
-    a = a - 1;
+    for (j = 0; a > 1 && j < b - 1; j++)  
+      a--;
+    a--;
   }
-  if (a == 0 && j == b - 1)
-    return 1;
-  else
-    return 0;
+  return a == 0 && j == b - 1;
 }
 
 int main() {
@@ -25,5 +19,7 @@ int main() {
     // Si = 1...M;
     if (divisibile(M, i))
       // Soutput = filter(divisibile(M,i), Si)
-      printf("%d\n", i);
+      printf("%d ", i);
+    printf("\n");
+    return 0;
 }
