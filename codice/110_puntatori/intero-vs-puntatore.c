@@ -1,5 +1,5 @@
 #include <stdio.h>
-main() {
+int main() {
   int i = 100;
   int* p = (int*)100;
   printf("i vale %d; i + 1 vale %d\n", i, i + 1);
