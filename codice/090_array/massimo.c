@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define DIM 10
+#define DIM 5
 
-main() {
+int main() {
   int a[DIM], i, m;
 
   for (i = 0; i < DIM; i++)
@@ -11,5 +11,6 @@ main() {
     if (a[i] > a[m])
       m = i;
 
-  printf("%d\n", m);
+  printf("Indice del massimo: %d\n", m);
+  printf("Massimo: %d\n", a[m]);
 }

@@ -10,7 +10,7 @@ main() {
       b[dl] = a[i];
       dl++;
     }
-  // qui b ha dimensione logica j e contiene 
+  // qui b ha dimensione logica dl e contiene 
   // tutti gli elementi di a con la
   // proprieta` desiderata
 }
