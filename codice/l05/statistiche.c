@@ -73,4 +73,5 @@ int main() {
     if (frequenze[i_f] == frequenze[indice_massima_frequenza])
         printf("%d ", valori[i_f]);
   }
+  printf("\n");
 }
