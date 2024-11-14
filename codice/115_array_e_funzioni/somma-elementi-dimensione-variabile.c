@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int somma(int v[], int dl) {
+int somma(int *v, int dl) {
   int i, s = 0;
   for (i = 0; i < dl; i++)
     s += v[i];
