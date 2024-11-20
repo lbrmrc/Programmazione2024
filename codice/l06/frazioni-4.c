@@ -26,7 +26,7 @@ int den(Frazione f) { return f.den; }
 Frazione frazione(int n, int d) {
   Frazione f;
   int m;
-  if (d == 0){
+  if (d == 0) {
     printf("Errore: divisione per 0\n");
     exit(1);
   }
@@ -42,7 +42,9 @@ Frazione leggiFrazione() {
   return frazione(n, d);
 }
 
-void stampaFrazionaria(Frazione f) { printf("%d/%d", num(f), den(f)); }
+void stampaFrazionaria(Frazione f, char *s) {
+  sprintf(s, "%d/%d", num(f), den(f));
+}
 
 void stampaDecimale(Frazione f) { printf("%f", (float)num(f) / den(f)); }
 
@@ -66,14 +68,19 @@ Frazione quoziente(Frazione f1, Frazione f2) {
 
 int main() {
   Frazione f1, f2;
-  f1 = frazione(36, 60);
-  f2 = frazione(0, 1);
-  stampaFrazionaria(somma(f1, f2));
-  printf("\n");
-  stampaFrazionaria(differenza(f1, f2));
-  printf("\n");
-  stampaFrazionaria(prodotto(f1, f2));
-  printf("\n");
-  stampaFrazionaria(quoziente(f1, f2));
-  printf("\n");
+  char s1[30], s2[30], sr[30];
+  printf("Inserisci numeratore e denominatore di due frazioni\n");
+  f1 = leggiFrazione();
+  f2 = leggiFrazione();
+
+  stampaFrazionaria(f1, s1);
+  stampaFrazionaria(f2, s2);
+  stampaFrazionaria(somma(f1, f2), sr);
+  printf(("%s + %s = %s\n", s1, s2, sr));
+  stampaFrazionaria(differenza(f1, f2), sr);
+  printf(("%s + %s = %s\n", s1, s2, sr));
+  stampaFrazionaria(prodotto(f1, f2), sr);
+  printf(("%s + %s = %s\n", s1, s2, sr));
+  stampaFrazionaria(quoziente(f1, f2), sr);
+  printf(("%s + %s = %s\n", s1, s2, sr));
 }
