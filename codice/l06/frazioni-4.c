@@ -76,11 +76,11 @@ int main() {
   stampaFrazionaria(f1, s1);
   stampaFrazionaria(f2, s2);
   stampaFrazionaria(somma(f1, f2), sr);
-  printf(("%s + %s = %s\n", s1, s2, sr));
+  printf("%s + %s = %s\n", s1, s2, sr);
   stampaFrazionaria(differenza(f1, f2), sr);
-  printf(("%s + %s = %s\n", s1, s2, sr));
+  printf("%s + %s = %s\n", s1, s2, sr);
   stampaFrazionaria(prodotto(f1, f2), sr);
-  printf(("%s + %s = %s\n", s1, s2, sr));
+  printf("%s + %s = %s\n", s1, s2, sr);
   stampaFrazionaria(quoziente(f1, f2), sr);
-  printf(("%s + %s = %s\n", s1, s2, sr));
+  printf("%s + %s = %s\n", s1, s2, sr);
 }
