@@ -12,7 +12,7 @@ typedef union {
   } datiRettangolo;
 } DatiFigura;
 
-typedef struct {
+typedef struct { // discriminated union
   TipoFigura tipo; // discriminante
   DatiFigura dati;
 } Figura;
