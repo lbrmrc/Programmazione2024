@@ -18,6 +18,28 @@ void inizializza(Campo *pc) {
         pc->caselle[i][j] = 0;
 }
 
+int mineAdiacenti(Campo *pc, int riga, int col) {
+  int contamine;
+  contamine = 0;
+  if (riga > 0 && col > 0 && pc->caselle[riga - 1][col - 1])
+    contamine++;
+  if (riga > 0 && pc->caselle[riga - 1][col])
+    contamine++;
+  if (riga > 0 && col < NCOLONNE - 1 && pc->caselle[riga - 1][col + 1])
+    contamine++;
+  if (col > 0 && pc->caselle[riga][col - 1])
+    contamine++;
+  if (col < NCOLONNE - 1 && pc->caselle[riga][col + 1])
+    contamine++;
+  if (riga < NRIGHE - 1 && col > 0 && pc->caselle[riga + 1][col - 1])
+    contamine++;
+  if (riga < NRIGHE - 1 && pc->caselle[riga + 1][col])
+    contamine++;
+  if (riga < NRIGHE - 1 && col < NCOLONNE - 1 && pc->caselle[riga + 1][col + 1])
+    contamine++;
+  return contamine;
+}
+
 void stampa(Campo *pc) {
   int i, j;
   for (i = 0; i < NRIGHE; i++) {
@@ -25,7 +47,7 @@ void stampa(Campo *pc) {
       if (pc->caselle[i][j])
         printf("*");
       else
-        printf(" ");
+        printf("%d", mineAdiacenti(pc, i, j));
     printf("\n");
   }
 }
