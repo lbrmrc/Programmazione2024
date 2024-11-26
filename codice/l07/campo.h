@@ -1,7 +1,7 @@
 // interfaccia dell'ADT Campo
 
-#define NRIGHE 4
-#define NCOLONNE 6
+#define NRIGHE 12
+#define NCOLONNE 15
 #define PROBMINA 0.2
 
 // definizione del tipo

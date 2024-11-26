@@ -43,6 +43,7 @@ int mineAdiacenti(Campo *pc, int riga, int col) {
 void stampa(Campo *pc) {
   int i, j;
   for (i = 0; i < NRIGHE; i++) {
+    printf("%d ", i + 1);
     for (j = 0; j < NCOLONNE; j++)
       if (pc->caselle[i][j])
         printf("*");
@@ -50,4 +51,8 @@ void stampa(Campo *pc) {
         printf("%d", mineAdiacenti(pc, i, j));
     printf("\n");
   }
+  printf("  ");
+  for (j = 0; j < NCOLONNE; j++)
+    printf("%c", 'a' + j);
+  printf("\n");
 }
