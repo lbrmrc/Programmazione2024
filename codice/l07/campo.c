@@ -68,5 +68,20 @@ void stampa(Campo *pc) {
 }
 
 void aggiorna(Campo *pc, Mossa m) {
-  pc->caselle[m.riga][m.col].coperta = 0;
+  pc->caselle[riga(m)][colonna(m)].coperta = 0;
+}
+
+Valutazione valutazione(Campo *pc) {
+  int i, j;
+  for (i = 0; i < NRIGHE; i++)
+    for (j = 0; j < NCOLONNE; j++)
+      // casella con mina scoperta
+      if (pc->caselle[i][j].mina && !pc->caselle[i][j].coperta)
+        return Perdente;
+  for (i = 0; i < NRIGHE; i++)
+    for (j = 0; j < NCOLONNE; j++)
+      // casella senza mina coperta
+      if (!pc->caselle[i][j].mina && pc->caselle[i][j].coperta)
+        return Aperto;
+  return Vincente;
 }

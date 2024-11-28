@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "campo.h"
 
 int main() {
@@ -7,10 +9,15 @@ int main() {
   stampa(&c);
   // stato iniziale
 
-  while (1) {
-    leggiMossa(&m); // azione
+  while (valutazione(&c) == Aperto) {
+    leggiMossa(&m);  // azione
     aggiorna(&c, m); // aggiornamento stato
-    stampa(&c); // presentazione
+    stampa(&c);      // presentazione
   }
+
+  if (valutazione(&c) == Vincente)
+    printf("Hai vinto\n");
+  else
+    printf("Hai perso\n");
   return 0;
 }

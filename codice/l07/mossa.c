@@ -8,3 +8,11 @@ void leggiMossa(Mossa *pm){
     pm->col = s[0] - 'a';
     pm->riga = s[1] - '1';
 }
+
+
+int riga(Mossa m){
+    return m.riga;
+}
+int colonna(Mossa m){
+    return m.col;
+}
