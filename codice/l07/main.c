@@ -6,10 +6,11 @@ int main() {
   inizializza(&c);
   stampa(&c);
   // stato iniziale
-  
-  leggiMossa(&m);
-  aggiorna(&c, m);
-  stampa(&c);
 
+  while (1) {
+    leggiMossa(&m); // azione
+    aggiorna(&c, m); // aggiornamento stato
+    stampa(&c); // presentazione
+  }
   return 0;
 }
