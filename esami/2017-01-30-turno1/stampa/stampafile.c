@@ -21,10 +21,10 @@ int main(int argc, char *argv[]) {
     
 
 // Errore: lettura disallineata
-//   fread(&r.cibo, 31, 1, pf);
+//   fread(r.cibo, 31, 1, pf);
 //   fread(&r.calorie, 4, 1, pf);
 
-//   fread(&r.cibo, 31, 1, pf);
+//   fread(r.cibo, 31, 1, pf);
 //   fread(&r.calorie, 4, 1, pf);
 
   fclose(pf);
