@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
 
   float calorie_totali;
 
-
   if (argc != 3) {
     printf("Uso: %s [fileCalorie] [filePasto]\n");
     exit(1);

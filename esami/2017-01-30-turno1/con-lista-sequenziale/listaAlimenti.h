@@ -5,12 +5,10 @@ typedef struct {
   float calorie;
 } Cibo;
 
-typedef struct nodo {
-  Cibo dato;
-  struct nodo *next;
-} Nodo;
-
-typedef Nodo *Lista;
+typedef struct {
+  int n_elementi;
+  Cibo dati[DIM];
+} Lista;
 
 void nuovaLista(Lista *pl); // dichiarazione
 
