@@ -1,0 +1,4 @@
+ABCDE 100
+Pane 80
+Camembert 40
+Mela 200
