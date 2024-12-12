@@ -4,9 +4,7 @@ typedef char CodiceFiscale[17];
 // tipo dell'elemento della lista
 typedef struct {
   CodiceFiscale cf;
-  int att1;
-  int att2;
-  int att3;
+  int att[3];
 } Dato;
 
 typedef struct nodo {
